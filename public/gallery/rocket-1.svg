@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Rocket Engineering Project Placeholder</title>
+  <desc id="desc">Stylized rocket launch illustration.</desc>
+  <rect width="800" height="600" fill="#0B1023"/>
+  <circle cx="130" cy="120" r="3" fill="#fff"/>
+  <circle cx="260" cy="80" r="2" fill="#fff"/>
+  <circle cx="680" cy="140" r="2.5" fill="#fff"/>
+  <circle cx="720" cy="70" r="2" fill="#fff"/>
+  <path d="M400 140c86 42 120 135 120 220H280c0-85 34-178 120-220Z" fill="#1D4ED8"/>
+  <rect x="360" y="180" width="80" height="220" rx="40" fill="#E5E7EB"/>
+  <polygon points="400,120 350,200 450,200" fill="#93C5FD"/>
+  <circle cx="400" cy="250" r="24" fill="#2563EB"/>
+  <polygon points="360,320 320,370 360,370" fill="#60A5FA"/>
+  <polygon points="440,320 480,370 440,370" fill="#60A5FA"/>
+  <polygon points="370,400 430,400 400,500" fill="#F97316"/>
+  <polygon points="380,400 420,400 400,460" fill="#FCD34D"/>
+</svg>
