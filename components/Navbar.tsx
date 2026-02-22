@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { profile } from '@/lib/content';
 import { PersonalLogo } from './PersonalLogo';
 
-const links = ['about', 'experience', 'projects', 'skills', 'gallery', 'blog', 'contact', 'resume'];
+const links = ['about', 'experience', 'projects', 'skills', 'contact', 'resume'];
 
 export function Navbar() {
   return (

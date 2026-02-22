@@ -16,8 +16,6 @@ Production-ready portfolio website using Next.js 14 App Router, TypeScript, Tail
 - `/experience`
 - `/projects`
 - `/skills`
-- `/gallery`
-- `/blog`
 - `/contact`
 - `/resume`
 - `/api/contact` (POST mock handler)

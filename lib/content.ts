@@ -77,34 +77,3 @@ export const socialLinks = {
   email: 'mailto:ichiro@example.com',
   instagram: 'https://instagram.com/ichiro'
 };
-
-export const blogPosts = [
-  {
-    slug: 'designing-vaaniconnect',
-    title: 'Designing VaaniConnect for Real-World Language Access',
-    excerpt:
-      'How we approach accessibility, UX systems, and multilingual user journeys while collaborating across borders.',
-    date: '2026-01-10'
-  },
-  {
-    slug: 'rocket-modeling-workflow',
-    title: 'From NX CAD to Flight Model: Rocket Workflow Notes',
-    excerpt:
-      'A concise look at how CAD, simulation, and spreadsheet modeling align during onboarding rocket development.',
-    date: '2025-11-21'
-  },
-  {
-    slug: 'portfolio-as-product',
-    title: 'Treating Your Portfolio Like a Product',
-    excerpt:
-      'Why interaction design, performance, and narrative matter when recruiting teams evaluate your work.',
-    date: '2025-09-03'
-  }
-];
-
-export const galleryImages = [
-  { src: '/gallery/rocket-1.svg', alt: 'Rocket concept render', caption: '300 mm rocket concept exploration' },
-  { src: '/gallery/rocket-2.svg', alt: 'Simulation chart', caption: 'OpenRocket simulation snapshot aesthetic' },
-  { src: '/gallery/project-1.svg', alt: 'VaaniConnect interface', caption: 'VaaniConnect product direction' },
-  { src: '/gallery/brand-1.svg', alt: 'Personal brand board', caption: 'Personal brand visual board' }
-];
