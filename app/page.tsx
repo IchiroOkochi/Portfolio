@@ -3,7 +3,6 @@ import { SectionWrapper } from '@/components/SectionWrapper';
 import { MotionWrapper } from '@/components/MotionWrapper';
 import { profile, experiences } from '@/lib/content';
 import { ProjectCards } from '@/components/ProjectCards';
-import { LogoGrid } from '@/components/LogoGrid';
 import { Buttons } from '@/components/Buttons';
 
 export default function HomePage() {
@@ -33,9 +32,6 @@ export default function HomePage() {
       </SectionWrapper>
       <SectionWrapper title="Featured Projects" subtitle="Interactive cards with motion depth and layered visual hierarchy.">
         <ProjectCards />
-      </SectionWrapper>
-      <SectionWrapper title="Project Logos">
-        <LogoGrid />
       </SectionWrapper>
       <SectionWrapper title="Let’s Build Something Exceptional">
         <Buttons />

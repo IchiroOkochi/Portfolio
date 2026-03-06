@@ -110,8 +110,8 @@ export const skills: SkillItem[] = [
 ];
 
 export const socialLinks = {
-  github: 'https://github.com/ichiro-okochi',
-  linkedin: 'https://www.linkedin.com/in/ichiro-okochi',
-  email: 'mailto:ichiro@example.com',
-  instagram: 'https://instagram.com/ichiro'
+  github: 'https://github.com/IchiroOkochi',
+  linkedin: 'https://www.linkedin.com/in/okochi/',
+  email: 'mailto:iokochi@purdue.edu',
+  instagram: 'https://instagram.com/ICHIRO_OKOCHI'
 };
