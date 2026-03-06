@@ -9,7 +9,7 @@ import { SocialIcons } from './SocialIcons';
 
 export function Hero() {
   return (
-    <section className="mx-auto flex min-h-[72vh] w-full max-w-6xl flex-col justify-center px-6 py-20 md:px-10">
+    <section className="relative z-10 mx-auto flex min-h-[72vh] w-full max-w-6xl flex-col justify-center px-6 py-20 md:px-10">
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-sm uppercase tracking-[0.22em] text-muted-foreground">
         {profile.major}
       </motion.p>
