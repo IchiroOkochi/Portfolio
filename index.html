@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ichiro Okochi — Portfolio</title>
+  <meta name="description" content="Ichiro Okochi — Computer Engineering Student, AI & Systems Engineer" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ CURSOR ═══════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">IO<span class="logo-dot">.</span></a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HOME ═══════════════════════ -->
+  <section id="home" class="section hero-section">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-label reveal-up">Computer Engineering Student @Purdue</p>
+      <h1 class="hero-name reveal-up">
+        <span class="name-line">Ichiro</span>
+        <span class="name-line italic-name">Okochi</span>
+      </h1>
+      <p class="hero-tagline reveal-up">Building intelligent systems that turn bold ideas into real-world impact.</p>
+      <div class="hero-btns reveal-up">
+        <a href="#projects" class="btn btn-outline hero-cta hero-cta-outline">View Projects</a>
+        <a href="#contact" class="btn btn-outline hero-cta hero-cta-outline">Contact Me</a>
+      </div>
+      <div class="hero-contacts reveal-up" aria-label="Primary contact links">
+        <a href="mailto:iokochi@purdue.edu" class="hero-contact-link" aria-label="Email Ichiro" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 6h16v12H4z"/>
+            <path d="M4 7l8 6 8-6"/>
+          </svg>
+        </a>
+        <a href="https://github.com/IchiroOkochi" target="_blank" rel="noopener" class="hero-contact-link" aria-label="Open GitHub profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/okochi" target="_blank" rel="noopener" class="hero-contact-link" aria-label="Open LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.97 1.97 0 100 3.94A1.97 1.97 0 005.25 3zM20.44 12.57c0-2.92-1.56-4.28-3.65-4.28-1.68 0-2.44.92-2.86 1.57V8.5h-3.37c.04.9 0 11.5 0 11.5h3.37v-6.42c0-.34.02-.68.13-.92.27-.68.9-1.39 1.95-1.39 1.38 0 1.93 1.05 1.93 2.59V20H21c0-2.52-.56-7.43-.56-7.43z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-intro reveal-up">
+            I am a <strong>Computer Engineering student at Purdue University</strong> building intelligent systems 
+            where artificial intelligence, software, and hardware meet — with a focus on turning 
+            ideas into real-world technology.
+          </p>
+          <p class="about-body reveal-up">
+            My work explores the intersection of machine learning, embedded systems, and real-world engineering. 
+            I am particularly interested in systems where intelligence leaves the screen and interacts with the 
+            physical world from AI-powered applications to flight hardware.
+          </p>
+          <p class="about-body reveal-up">
+            Currently, I contribute to the <strong>Purdue Space Program's Avionics Team</strong>, designing and developing hardware 
+            for high-power rockets, while also serving as a <strong>Design Lead in Purdue's Engineering Projects in Community 
+            Service (EPICS)</strong> program, where I help build AI-driven tools aimed at solving real-world problems.
+          </p>
+          <p class="about-body reveal-up">
+            <em>I'm driven by the belief that the most powerful engineering is often invisible — systems that are intelligent, 
+            reliable, and quietly shape the world around them.</em>
+          </p>
+          <div class="about-meta reveal-up">
+            <div class="meta-item">
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Indianapolis, IN</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">AI · Avionics · Systems</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Status</span>
+              <span class="meta-value status-active">Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-up">
+          <div class="about-card">
+            <div class="card-inner">
+              <div class="about-initials">IO</div>
+              <div class="about-card-lines">
+                <div class="card-line"></div>
+                <div class="card-line short"></div>
+                <div class="card-line"></div>
+                <div class="card-line shorter"></div>
+              </div>
+              <div class="about-card-tag current-focus" data-current-focus>
+                <div class="current-focus-header">
+                  <span class="tag-mono">// current focus</span>
+                  <span class="current-focus-live">live</span>
+                </div>
+                <div class="current-focus-content" aria-live="polite">
+                  <p class="current-focus-title" data-focus-title>VaaniConnect</p>
+                  <p class="current-focus-desc" data-focus-desc>
+                    Building an LLM-powered translation app for underrepresented Indian dialects and more inclusive multilingual communication.
+                  </p>
+                </div>
+                <div class="current-focus-meta">
+                  <span class="current-focus-stage" data-focus-stage>Active build</span>
+                  <span class="current-focus-index" data-focus-index>01 / 04</span>
+                </div>
+                <div class="current-focus-progress" aria-hidden="true">
+                  <span class="current-focus-progress-bar" data-focus-progress></span>
+                </div>
+                <div class="current-focus-controls" role="group" aria-label="Current focus controls">
+                  <button type="button" class="focus-control" data-focus-prev aria-label="Show previous focus">Prev</button>
+                  <button type="button" class="focus-control" data-focus-next aria-label="Show next focus">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal-up" data-index="0">
+          <div class="project-card-inner">
+            <div class="project-num">001</div>
+            <div class="project-content">
+              <h3 class="project-title">Vaani Connect</h3>
+              <p class="project-desc">
+                Architected the early backend for a multi-model AI pipeline, integrating STT, T2T, and TTS
+                with parallel processing workflows to reduce latency and keep the mobile and web platforms
+                aligned across EPICS and KL University teams.
+              </p>
+              <div class="project-stack">
+                <span>Python</span><span>WSL</span><span>STT/T2T/TTS</span><span>AI Pipeline</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/IchiroOkochi/vaani-connect" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <!-- <a href="#" class="project-link demo-link" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live Demo
+              </a> -->
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-index="1">
+          <div class="project-card-inner">
+            <div class="project-num">002</div>
+            <div class="project-content">
+              <h3 class="project-title">Embedded System Enclosure</h3>
+              <p class="project-desc">
+                Designed and 3D printed a custom enclosure for an embedded system using a Raspberry Pi Pico
+                and 900 MHz LoRa module, translating manual measurements, board specifications, and tolerance
+                calculations into a precise Siemens NX housing.
+              </p>
+              <div class="project-stack">
+                <span>Siemens NX</span><span>Raspberry Pi Pico</span><span>LoRa</span><span>3D Printing</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <!-- <a href="#" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a> -->
+              <a href="casingPSP.html" class="project-link demo-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                More
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- <article class="project-card reveal-up" data-index="2">
+          <div class="project-card-inner">
+            <div class="project-num">003</div>
+            <div class="project-content">
+              <h3 class="project-title">Computer Vision System</h3>
+              <p class="project-desc">
+                Real-time object detection and classification pipeline using YOLOv8 with custom training data.
+                Deployed on edge hardware with optimized inference achieving 60fps on embedded GPU.
+              </p>
+              <div class="project-stack">
+                <span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>TensorRT</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link demo-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up" data-index="3">
+          <div class="project-card-inner">
+            <div class="project-num">004</div>
+            <div class="project-content">
+              <h3 class="project-title">Soccer Scorekeeper App</h3>
+              <p class="project-desc">
+                Full-stack progressive web app for tracking live soccer matches. Features real-time
+                score syncing, player statistics, tournament bracket generation, and offline support.
+              </p>
+              <div class="project-stack">
+                <span>JavaScript</span><span>Node.js</span><span>WebSockets</span><span>IndexedDB</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link demo-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Live App
+              </a>
+            </div>
+          </div>
+        </article> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section id="skills-archive" class="section skills-section" hidden aria-hidden="true">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-showcase reveal-up">
+        <div class="skills-lanes" aria-hidden="true">
+          <div class="skills-lane-row lane-a">
+            <div class="skills-track">
+              <span>VPython</span>
+              <span>Electric and Magnetic Interactions</span>
+              <span>Electromagnetic Fields</span>
+              <span>Python (Programming Language)</span>
+              <span>Algorithms</span>
+              <span>Parallel Processing</span>
+              <span>Process Modeling</span>
+              <span>Computer Engineering</span>
+              <span>Siemens NX</span>
+              <span>Soldering</span>
+              <span>Printed Circuit Board (PCB) Design</span>
+              <span>OpenRocket</span>
+              <span>Problem Solving</span>
+              <span>Debugging</span>
+              <span>VPython</span>
+              <span>Electric and Magnetic Interactions</span>
+              <span>Electromagnetic Fields</span>
+              <span>Python (Programming Language)</span>
+              <span>Algorithms</span>
+              <span>Parallel Processing</span>
+              <span>Process Modeling</span>
+              <span>Computer Engineering</span>
+              <span>Siemens NX</span>
+              <span>Soldering</span>
+              <span>Printed Circuit Board (PCB) Design</span>
+              <span>OpenRocket</span>
+              <span>Problem Solving</span>
+              <span>Debugging</span>
+            </div>
+          </div>
+
+          <div class="skills-lane-row lane-b">
+            <div class="skills-track">
+              <span>Software Development</span>
+              <span>Programming</span>
+              <span>Object-Oriented Programming (OOP)</span>
+              <span>Application Development</span>
+              <span>Mobile Application Development</span>
+              <span>Hugging Face Products</span>
+              <span>google colab</span>
+              <span>GitHub</span>
+              <span>Powershell</span>
+              <span>Microsoft Office</span>
+              <span>Microsoft Word</span>
+              <span>Microsoft Excel</span>
+              <span>Microsoft PowerPoint</span>
+              <span>Microsoft Teams</span>
+              <span>Software Development</span>
+              <span>Programming</span>
+              <span>Object-Oriented Programming (OOP)</span>
+              <span>Application Development</span>
+              <span>Mobile Application Development</span>
+              <span>Hugging Face Products</span>
+              <span>google colab</span>
+              <span>GitHub</span>
+              <span>Powershell</span>
+              <span>Microsoft Office</span>
+              <span>Microsoft Word</span>
+              <span>Microsoft Excel</span>
+              <span>Microsoft PowerPoint</span>
+              <span>Microsoft Teams</span>
+            </div>
+          </div>
+
+          <div class="skills-lane-row lane-c">
+            <div class="skills-track">
+              <span>Notion</span>
+              <span>Google Docs</span>
+              <span>Google Drive</span>
+              <span>Google Sheets</span>
+              <span>Time Management</span>
+              <span>Coordinating Meetings</span>
+              <span>Event Planning</span>
+              <span>Event Organization</span>
+              <span>Organizational Development</span>
+              <span>Student Engagement</span>
+              <span>Product Requirements</span>
+              <span>Team Building</span>
+              <span>Volunteering</span>
+              <span>Notion</span>
+              <span>Google Docs</span>
+              <span>Google Drive</span>
+              <span>Google Sheets</span>
+              <span>Time Management</span>
+              <span>Coordinating Meetings</span>
+              <span>Event Planning</span>
+              <span>Event Organization</span>
+              <span>Organizational Development</span>
+              <span>Student Engagement</span>
+              <span>Product Requirements</span>
+              <span>Team Building</span>
+              <span>Volunteering</span>
+            </div>
+          </div>
+
+          <div class="skills-lane-row lane-d">
+            <div class="skills-track">
+              <span>Team Leadership</span>
+              <span>Team Management</span>
+              <span>Leadership</span>
+              <span>Public Speaking</span>
+              <span>Presentation Skills</span>
+              <span>Design Documents</span>
+              <span>Cross-Cultural Communication</span>
+              <span>Communication</span>
+              <span>Contractor Liaison</span>
+              <span>Liaison</span>
+              <span>Japanese</span>
+              <span>Japanese to English</span>
+              <span>Helping People</span>
+              <span>Team Leadership</span>
+              <span>Team Management</span>
+              <span>Leadership</span>
+              <span>Public Speaking</span>
+              <span>Presentation Skills</span>
+              <span>Design Documents</span>
+              <span>Cross-Cultural Communication</span>
+              <span>Communication</span>
+              <span>Contractor Liaison</span>
+              <span>Liaison</span>
+              <span>Japanese</span>
+              <span>Japanese to English</span>
+              <span>Helping People</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-stage">
+          <div class="skills-backdrop"></div>
+          <div class="skills-orbit">
+            <div class="orbit-ring orbit-ring-one"></div>
+            <div class="orbit-ring orbit-ring-two"></div>
+            <div class="orbit-ring orbit-ring-three"></div>
+
+            <div class="skills-core">
+              <span class="skills-core-label">Full Skill Map</span>
+              <p class="skills-core-copy">
+                Hardware, software, leadership, and multilingual collaboration woven into one evolving toolkit.
+              </p>
+            </div>
+
+            <span class="skill-node node-1">Python</span>
+            <span class="skill-node node-2">VPython</span>
+            <span class="skill-node node-3">Siemens NX</span>
+            <span class="skill-node node-4">PCB Design</span>
+            <span class="skill-node node-5">OpenRocket</span>
+            <span class="skill-node node-6">Software Dev</span>
+            <span class="skill-node node-7">GitHub</span>
+            <span class="skill-node node-8">Hugging Face</span>
+            <span class="skill-node node-9">Public Speaking</span>
+            <span class="skill-node node-10">Leadership</span>
+            <span class="skill-node node-11">Japanese</span>
+            <span class="skill-node node-12">Mobile Apps</span>
+          </div>
+        </div>
+
+        <div class="skills-marquee">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">◈</span>
+            Engineering
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-bar"><span style="width:88%"></span></span>Computer Engineering</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:82%"></span></span>Electromagnetic Fields</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:80%"></span></span>Siemens NX</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:76%"></span></span>Printed Circuit Board (PCB) Design</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:72%"></span></span>OpenRocket</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⬡</span>
+            Software
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-bar"><span style="width:86%"></span></span>Python (Programming Language)</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:82%"></span></span>Software Development</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:78%"></span></span>Object-Oriented Programming (OOP)</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:74%"></span></span>Mobile Application Development</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:70%"></span></span>Algorithms</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">△</span>
+            Leadership
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-bar"><span style="width:90%"></span></span>Team Leadership</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:84%"></span></span>Public Speaking</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:80%"></span></span>Cross-Cultural Communication</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:74%"></span></span>Contractor Liaison</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:70%"></span></span>Coordinating Meetings</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Aug 2025 - May 2029</span>
+            <h3 class="timeline-title">Purdue University</h3>
+            <p class="timeline-role">Bachelor of Science - BS, Computer Engineering</p>
+            <div class="timeline-desc">
+              <p class="timeline-meta">Grade: 3.68</p>
+              <p class="timeline-meta">Activities and societies:</p>
+              <ul class="timeline-list">
+                <li>Purdue Space Program: Participate in Purdue's interdisciplinary aerospace organization where members design, build, and launch rockets while gaining hands-on engineering and teamwork experience.</li>
+                <li>Purdue Student Union Board: Contribute to event planning and campus programming that enriches student life and develops leadership and organizational skills.</li>
+                <li>Taekwondo: Trained regularly with Purdue's official Taekwondo Club, improving martial arts skills.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2026 - Present · 3 mos</span>
+            <h3 class="timeline-title">Design Lead</h3>
+            <p class="timeline-role">EPICS at Purdue</p>
+            <div class="timeline-desc">
+              <p class="timeline-meta">Indianapolis, Indiana, United States · On-site</p>
+              <ul class="timeline-list">
+                <li>Architected early backend structure for a multi-model AI pipeline.</li>
+                <li>Integrated STT, T2T, and TTS components for seamless flow.</li>
+                <li>Designed parallel processing workflows to eliminate bottlenecks.</li>
+                <li>Built and tested system using Python and WSL environment.</li>
+                <li>Reduced latency between speech and response outputs.</li>
+                <li>Experimented with model integrations to improve stability.</li>
+                <li>Collaborated with KL University cross-functional teams.</li>
+                <li>Aligned mobile app backend with web app architecture.</li>
+                <li>Ensured consistent product direction across platforms.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Aug 2025 - Dec 2025 · 5 mos</span>
+            <h3 class="timeline-title">Project Liaison</h3>
+            <p class="timeline-role">Indian Institute of Technology, Delhi</p>
+            <div class="timeline-desc">
+              <p class="timeline-meta">West Lafayette, Indiana, United States · Remote</p>
+              <ul class="timeline-list">
+                <li>Coordinated cross-border collaboration between Purdue and IIT Delhi teams.</li>
+                <li>Organized structured meetings to drive project momentum.</li>
+                <li>Shared weekly progress updates to maintain transparency.</li>
+                <li>Relayed faculty feedback to ensure academic alignment.</li>
+                <li>Researched mechanical design requirements for seed processing system.</li>
+                <li>Evaluated material selection for durability and cost efficiency.</li>
+                <li>Assessed user safety standards for rural deployment.</li>
+                <li>Contributed to development of low-cost Bhilawa seed decorticator.</li>
+                <li>Designed solution tailored for rural Indian communities.</li>
+                <li>Prepared requirement specifications for engineering clarity.</li>
+                <li>Created meeting summaries for streamlined decision-making.</li>
+                <li>Developed presentation materials for partner communication.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2026 - Present · 2 mos</span>
+            <h3 class="timeline-title">General Member</h3>
+            <p class="timeline-role">Purdue Student Union Board (PSUB)</p>
+            <div class="timeline-desc">
+              <p class="timeline-meta">Indianapolis, Indiana, United States · On-site</p>
+              <ul class="timeline-list">
+                <li>Contribute to the planning and execution of large-scale campus events designed to increase student engagement and community involvement.</li>
+                <li>Propose and develop new event concepts to enhance campus culture and participation.</li>
+                <li>Assist with logistics, operations, and coordination during live events.</li>
+                <li>Collaborate with board members to improve outreach strategies and student experience initiatives.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot last-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2026 - Present · 2 mos</span>
+            <h3 class="timeline-title">Avionics Team Member</h3>
+            <p class="timeline-role">Purdue Space Program: A SEDS Chapter</p>
+            <div class="timeline-desc">
+              <p class="timeline-meta">Indianapolis, Indiana, United States · On-site</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ BLOG ═══════════════════════ -->
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SKILLS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-showcase reveal-up">
+        <div class="skills-lanes" aria-hidden="true">
+          <div class="skills-lane-row lane-a">
+            <div class="skills-track">
+              <span>VPython</span>
+              <span>Electric and Magnetic Interactions</span>
+              <span>Electromagnetic Fields</span>
+              <span>Python (Programming Language)</span>
+              <span>Algorithms</span>
+              <span>Parallel Processing</span>
+              <span>Process Modeling</span>
+              <span>Computer Engineering</span>
+              <span>Siemens NX</span>
+              <span>Soldering</span>
+              <span>Printed Circuit Board (PCB) Design</span>
+              <span>OpenRocket</span>
+              <span>Problem Solving</span>
+              <span>Debugging</span>
+              <span>VPython</span>
+              <span>Electric and Magnetic Interactions</span>
+              <span>Electromagnetic Fields</span>
+              <span>Python (Programming Language)</span>
+              <span>Algorithms</span>
+              <span>Parallel Processing</span>
+              <span>Process Modeling</span>
+              <span>Computer Engineering</span>
+              <span>Siemens NX</span>
+              <span>Soldering</span>
+              <span>Printed Circuit Board (PCB) Design</span>
+              <span>OpenRocket</span>
+              <span>Problem Solving</span>
+              <span>Debugging</span>
+            </div>
+          </div>
+
+          <div class="skills-lane-row lane-b">
+            <div class="skills-track">
+              <span>Software Development</span>
+              <span>Programming</span>
+              <span>Object-Oriented Programming (OOP)</span>
+              <span>Application Development</span>
+              <span>Mobile Application Development</span>
+              <span>Hugging Face Products</span>
+              <span>google colab</span>
+              <span>GitHub</span>
+              <span>Powershell</span>
+              <span>Microsoft Office</span>
+              <span>Microsoft Word</span>
+              <span>Microsoft Excel</span>
+              <span>Microsoft PowerPoint</span>
+              <span>Microsoft Teams</span>
+              <span>Software Development</span>
+              <span>Programming</span>
+              <span>Object-Oriented Programming (OOP)</span>
+              <span>Application Development</span>
+              <span>Mobile Application Development</span>
+              <span>Hugging Face Products</span>
+              <span>google colab</span>
+              <span>GitHub</span>
+              <span>Powershell</span>
+              <span>Microsoft Office</span>
+              <span>Microsoft Word</span>
+              <span>Microsoft Excel</span>
+              <span>Microsoft PowerPoint</span>
+              <span>Microsoft Teams</span>
+            </div>
+          </div>
+
+          <div class="skills-lane-row lane-c">
+            <div class="skills-track">
+              <span>Notion</span>
+              <span>Google Docs</span>
+              <span>Google Drive</span>
+              <span>Google Sheets</span>
+              <span>Time Management</span>
+              <span>Coordinating Meetings</span>
+              <span>Event Planning</span>
+              <span>Event Organization</span>
+              <span>Organizational Development</span>
+              <span>Student Engagement</span>
+              <span>Product Requirements</span>
+              <span>Team Building</span>
+              <span>Volunteering</span>
+              <span>Notion</span>
+              <span>Google Docs</span>
+              <span>Google Drive</span>
+              <span>Google Sheets</span>
+              <span>Time Management</span>
+              <span>Coordinating Meetings</span>
+              <span>Event Planning</span>
+              <span>Event Organization</span>
+              <span>Organizational Development</span>
+              <span>Student Engagement</span>
+              <span>Product Requirements</span>
+              <span>Team Building</span>
+              <span>Volunteering</span>
+            </div>
+          </div>
+
+          <div class="skills-lane-row lane-d">
+            <div class="skills-track">
+              <span>Team Leadership</span>
+              <span>Team Management</span>
+              <span>Leadership</span>
+              <span>Public Speaking</span>
+              <span>Presentation Skills</span>
+              <span>Design Documents</span>
+              <span>Cross-Cultural Communication</span>
+              <span>Communication</span>
+              <span>Contractor Liaison</span>
+              <span>Liaison</span>
+              <span>Japanese</span>
+              <span>Japanese to English</span>
+              <span>Helping People</span>
+              <span>Team Leadership</span>
+              <span>Team Management</span>
+              <span>Leadership</span>
+              <span>Public Speaking</span>
+              <span>Presentation Skills</span>
+              <span>Design Documents</span>
+              <span>Cross-Cultural Communication</span>
+              <span>Communication</span>
+              <span>Contractor Liaison</span>
+              <span>Liaison</span>
+              <span>Japanese</span>
+              <span>Japanese to English</span>
+              <span>Helping People</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-stage">
+          <div class="skills-backdrop"></div>
+          <div class="skills-orbit">
+            <div class="orbit-ring orbit-ring-one"></div>
+            <div class="orbit-ring orbit-ring-two"></div>
+            <div class="orbit-ring orbit-ring-three"></div>
+
+            <div class="skills-core">
+              <span class="skills-core-label">Full Skill Map</span>
+              <p class="skills-core-copy">
+                Hardware, software, leadership, and multilingual collaboration woven into one evolving toolkit.
+              </p>
+            </div>
+
+            <span class="skill-node node-1">Python</span>
+            <span class="skill-node node-2">VPython</span>
+            <span class="skill-node node-3">Siemens NX</span>
+            <span class="skill-node node-4">PCB Design</span>
+            <span class="skill-node node-5">OpenRocket</span>
+            <span class="skill-node node-6">Software Dev</span>
+            <span class="skill-node node-7">GitHub</span>
+            <span class="skill-node node-8">Hugging Face</span>
+            <span class="skill-node node-9">Public Speaking</span>
+            <span class="skill-node node-10">Leadership</span>
+            <span class="skill-node node-11">Japanese</span>
+            <span class="skill-node node-12">Mobile Apps</span>
+          </div>
+        </div>
+
+        <div class="skills-marquee">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">*</span>
+            Engineering
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-bar"><span style="width:88%"></span></span>Computer Engineering</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:82%"></span></span>Electromagnetic Fields</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:80%"></span></span>Siemens NX</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:76%"></span></span>Printed Circuit Board (PCB) Design</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:72%"></span></span>OpenRocket</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">[]</span>
+            Software
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-bar"><span style="width:86%"></span></span>Python (Programming Language)</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:82%"></span></span>Software Development</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:78%"></span></span>Object-Oriented Programming (OOP)</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:74%"></span></span>Mobile Application Development</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:70%"></span></span>Algorithms</li>
+          </ul>
+        </div>
+
+        <div class="skill-category reveal-up">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">//</span>
+            Leadership
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-bar"><span style="width:90%"></span></span>Team Leadership</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:84%"></span></span>Public Speaking</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:80%"></span></span>Cross-Cultural Communication</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:74%"></span></span>Contractor Liaison</li>
+            <li class="skill-item"><span class="skill-bar"><span style="width:70%"></span></span>Coordinating Meetings</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="section blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Writing</h2>
+      </div>
+      <div class="blog-grid">
+
+        <article class="blog-card reveal-up">
+          <span class="blog-date">Coming soon</span>
+          <h3 class="blog-title">Currently working on this!</h3>
+          <p class="blog-excerpt">
+            I am building out this section now. Fresh writing and project notes will be up here soon.
+          </p>
+        </article>
+
+        <!--
+        <article class="blog-card reveal-up">
+          <span class="blog-date">March 2025</span>
+          <h3 class="blog-title">How I Built a Real-Time Multilingual Translator with Whisper</h3>
+          <p class="blog-excerpt">
+            A deep dive into fine-tuning OpenAI's Whisper model for low-latency multilingual transcription,
+            the architecture decisions that made it fast, and what I learned about transformer inference optimization.
+          </p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </article>
+
+        <article class="blog-card reveal-up">
+          <span class="blog-date">February 2025</span>
+          <h3 class="blog-title">Designing Avionics for a 30,000ft Rocket</h3>
+          <p class="blog-excerpt">
+            From PCB layout to sensor fusion: the engineering decisions behind building flight-critical
+            electronics that survive 20g launches and deploy parachutes at exactly the right moment.
+          </p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </article>
+
+        <article class="blog-card reveal-up">
+          <span class="blog-date">January 2025</span>
+          <h3 class="blog-title">YOLOv8 on the Edge: 60fps Object Detection on Embedded Hardware</h3>
+          <p class="blog-excerpt">
+            Getting state-of-the-art computer vision running fast on constrained hardware is a challenge
+            of optimization, quantization, and knowing which corners to cut without losing accuracy.
+          </p>
+          <a href="#" class="blog-read-more">Read Article <span>→</span></a>
+        </article>
+        -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-up">
+          <p class="contact-lead">
+            Whether it's a collaboration, research opportunity, or just a conversation
+            about rockets and AI — I'd love to hear from you.
+          </p>
+          <ul class="contact-links" aria-label="Contact links">
+            <li class="contact-link contact-link-email">
+              <a href="mailto:okochi@purdue.edu" class="contact-item">
+              <span class="contact-icon">✉</span>
+                <span class="contact-item-copy">
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-value">okochi@purdue.edu</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact-link contact-link-github">
+              <a href="https://github.com/ichirookochi" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </span>
+                <span class="contact-item-copy">
+                  <span class="contact-item-label">GitHub</span>
+                  <span class="contact-item-value">github.com/ichirookochi</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact-link contact-link-linkedin">
+              <a href="https://linkedin.com/in/okochi" target="_blank" rel="noopener" class="contact-item">
+                <span class="contact-icon" aria-hidden="true">in</span>
+                <span class="contact-item-copy">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-value">linkedin.com/in/okochi</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form reveal-up" id="contactForm">
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <div class="form-success" id="formSuccess">Message sent. I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">IO<span class="logo-dot">.</span></span>
+      <p class="footer-copy">© 2025 Ichiro Okochi. Made with ☕Coffee and Love.</p>
+      <a href="#home" class="footer-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       AI ASSISTANT — Floating button + full chat panel
+       Two modes: LOCAL (always works) + optional HUGGING FACE API
+       Configure in script.js under AI_CONFIG
+  ═══════════════════════════════════════════════════════════════ -->
+
+  <!-- FAB trigger -->
+  <div class="ai-fab" id="aiFab" role="button" tabindex="0"
+       aria-label="Open Ichiro AI Assistant" aria-expanded="false">
+    <div class="ai-fab-ring"></div>
+    <div class="ai-fab-icon">
+      <!-- Sparkle icon (idle) -->
+      <svg class="ai-fab-svg-idle" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+        <path d="M18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+      </svg>
+      <!-- Close icon (when open) -->
+      <svg class="ai-fab-svg-close" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </div>
+    <div class="ai-fab-badge" id="aiFabBadge" aria-hidden="true">AI</div>
+  </div>
+
+  <!-- Chat panel -->
+  <div class="ai-chat" id="aiChat"
+       role="dialog" aria-modal="true"
+       aria-label="Ichiro AI Assistant" aria-hidden="true">
+
+    <!-- Header -->
+    <div class="ai-chat-header">
+      <div class="ai-chat-header-left">
+        <div class="ai-avatar" aria-hidden="true">IO</div>
+        <div class="ai-chat-meta">
+          <span class="ai-chat-name">Ichiro AI</span>
+          <span class="ai-chat-status" id="aiStatus">
+            <span class="ai-status-dot"></span>
+            <span class="ai-status-text" id="aiStatusText">Local Mode</span>
+          </span>
+        </div>
+      </div>
+      <div class="ai-chat-header-right">
+        <button class="ai-header-btn ai-clear-btn" id="aiClear"
+                aria-label="Clear conversation" title="Clear chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" width="13" height="13">
+            <polyline points="3 6 5 6 21 6"/>
+            <path d="M19 6l-1 14H6L5 6"/>
+            <path d="M10 11v6M14 11v6"/>
+            <path d="M9 6V4h6v2"/>
+          </svg>
+        </button>
+        <button class="ai-header-btn ai-close-btn" id="aiClose"
+                aria-label="Close assistant">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" width="13" height="13">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scrollable messages -->
+    <div class="ai-chat-messages" id="aiMessages"
+         role="log" aria-live="polite" aria-label="Conversation"></div>
+
+    <!-- Context-aware suggestion chips (updated per scroll position) -->
+    <div class="ai-suggestions-bar" id="aiSuggestionsBar"
+         aria-label="Suggested questions"></div>
+
+    <!-- Input row -->
+    <div class="ai-input-row">
+      <input
+        type="text"
+        id="aiInput"
+        class="ai-text-input"
+        placeholder="Ask anything about Ichiro…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Your message"
+        maxlength="300"
+      />
+      <button class="ai-send-btn" id="aiSend" aria-label="Send message">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="ai-chat-footer">
+      <span id="aiPoweredBy">Powered by local knowledge base</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

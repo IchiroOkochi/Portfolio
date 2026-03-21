@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embedded System Enclosure - Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="casingPSP.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Portfolio
+    </a>
+    <span class="project-index">Project 02 <span class="index-muted">/ 06</span></span>
+  </header>
+
+  <div class="page-wrap">
+    <section class="hero-section reveal">
+      <div class="hero-text">
+        <p class="eyebrow">Embedded Systems &middot; Enclosure Design</p>
+        <h1>Embedded<br><em>System</em><br>Enclosure</h1>
+        <p class="hero-desc">A custom enclosure for an embedded system using a Raspberry Pi Pico and a 900 MHz LoRa module, designed from physical measurements through to a final 3D printed case.</p>
+        <div class="hero-tags">
+          <span class="tag">Siemens NX</span>
+          <span class="tag">Raspberry Pi Pico</span>
+          <span class="tag">900 MHz LoRa</span>
+          <span class="tag">PLA Plastic</span>
+        </div>
+      </div>
+
+      <div class="model-stage-wrap">
+        <div class="model-stage" id="stageContainer">
+          <canvas id="bg"></canvas>
+          <div class="model-badge">
+            <span class="badge-dot"></span>
+            3D - Auto Rotating
+          </div>
+        </div>
+        <p class="stage-caption">Drag to orbit &middot; Scroll or pinch to zoom</p>
+      </div>
+    </section>
+
+    <section class="content-section reveal">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-rule"></span>
+        Overview
+      </div>
+      <div class="overview-grid">
+        <div class="overview-main">
+          <h2>The Brief</h2>
+          <p>After completing onboarding, one of my first contributions was designing and building a custom enclosure for an embedded system using a Raspberry Pi Pico and a 900 MHz LoRa module.</p>
+          <p>I started by manually measuring the board with calipers, cross-referencing online specifications, and calculating the spacing and tolerances needed for a proper fit. I then designed the enclosure from scratch in Siemens NX and 3D printed the final case to make sure everything integrated cleanly.</p>
+          <p>Taking something from physical measurements to a functional printed component was a rewarding step into real hardware development.</p>
+        </div>
+        <div class="overview-aside">
+          <h3>Quick Notes</h3>
+          <ul class="objectives-list">
+            <li>
+              <span class="obj-marker">-</span>
+              Measured the board by hand with calipers
+            </li>
+            <li>
+              <span class="obj-marker">-</span>
+              Checked specs and fit tolerances against online references
+            </li>
+            <li>
+              <span class="obj-marker">-</span>
+              Designed the full enclosure from scratch in Siemens NX
+            </li>
+            <li>
+              <span class="obj-marker">-</span>
+              3D printed the final PLA case for fit validation
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section reveal">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-rule"></span>
+        Gallery
+      </div>
+
+      <div class="gallery-grid">
+        <div class="img-slot slot-a">
+          <img class="slot-img" src="image/casingPSP1_Avionics_PSP_Purdue_Rocket.jpg" alt="Embedded system enclosure hero view" width="2200" height="1650" loading="eager" decoding="async" fetchpriority="high">
+        </div>
+
+        <div class="img-slot slot-b">
+          <img class="slot-img" src="image/casingPSP2_Avionics_PSP_Purdue_Rocket.jpg" alt="Embedded system enclosure angled view" width="2200" height="1650" loading="lazy" decoding="async">
+        </div>
+
+        <div class="img-slot slot-c">
+          <img class="slot-img" src="image/casingPSP3_Avionics_PSP_Purdue_Rocket.jpg" alt="Embedded system enclosure detail view" width="2200" height="1650" loading="lazy" decoding="async">
+        </div>
+
+        <div class="img-slot slot-d">
+          <img class="slot-img" src="image/casingPSP4_Avionics_PSP_Purdue_Rocket.jpg" alt="Embedded system enclosure wide view" width="2200" height="1650" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <footer class="project-footer reveal">
+      <div class="footer-inner">
+        <span class="footer-label">Next Project</span>
+        <a href="#" class="next-link">
+          This is the last page
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+  </script>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.179.1/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.179.1/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="casingPSP.js"></script>
+</body>
+</html>
