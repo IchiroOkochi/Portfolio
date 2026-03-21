@@ -318,7 +318,7 @@ const KNOWLEDGE_BASE = {
    Personalise this text for richer LLM responses.
    ═══════════════════════════════════════════════════════════════ */
 function buildSystemPrompt() {
-  return `You are Ichiro AI, a portfolio assistant for ${KNOWLEDGE_BASE.name}.
+  return `You are Ichibot, a portfolio assistant for ${KNOWLEDGE_BASE.name}.
 Speak in a concise, professional, and friendly tone. Answer only about Ichiro's portfolio.
 Key facts:
 - ${KNOWLEDGE_BASE.headline}
@@ -1354,7 +1354,7 @@ window.addEventListener('load', () => { document.body.style.opacity = '1'; });
     messagesEl.appendChild(div);
 
     addMessage(
-      `Hi — I'm <strong>Ichiro AI</strong>. Ask me about his projects, skills, experience,
+      `Hi — I'm <strong>Ichibot</strong>. Ask me about his projects, skills, experience,
        or tell me where you'd like to go on this portfolio.`,
       'assistant'
     );
