@@ -85,7 +85,7 @@ controls.maxDistance = 7;
 controls.target.set(0, 0, 0);
 controls.update();
 
-const hemiLight = new THREE.HemisphereLight(0xffffff, 0xd7d0c6, 4.6);
+const hemiLight = new THREE.HemisphereLight(0xffffff, 0x3a2e22, 3.2);
 scene.add(hemiLight);
 
 const topLight = new THREE.DirectionalLight(0xffffff, 4.4);
@@ -100,7 +100,7 @@ const fillLight = new THREE.DirectionalLight(0xe7dfd5, 2.4);
 fillLight.position.set(-6, 4, 4);
 scene.add(fillLight);
 
-const rimLight = new THREE.DirectionalLight(0xffffff, 2.6);
+const rimLight = new THREE.DirectionalLight(0xE2A86B, 4);
 rimLight.position.set(-4, 3, -6);
 scene.add(rimLight);
 
@@ -121,7 +121,7 @@ loader.load(
     model = gltf.scene;
 
     const matteBlackMaterial = new THREE.MeshPhysicalMaterial({
-      color: 0x101010,
+      color: 0x1c1a17,
       metalness: 0.03,
       roughness: 0.78,
       clearcoat: 0.16,
@@ -145,6 +145,11 @@ loader.load(
       child.castShadow = false;
       child.receiveShadow = false;
       child.material = matteBlackMaterial;
+      // copper edge lines so the black print reads against the dark stage
+      child.add(new THREE.LineSegments(
+        new THREE.EdgesGeometry(child.geometry, 25),
+        new THREE.LineBasicMaterial({ color: 0xE2A86B, transparent: true, opacity: 0.55 })
+      ));
     });
 
     scene.add(model);

@@ -834,3 +834,71 @@ h1 em {
     transition: none;
   }
 }
+
+/* ════════════════════════════════════════════════════════════════
+   Nov 2026: dark circuit theme to match the main portfolio.
+   Overrides the original light styles above.
+   ════════════════════════════════════════════════════════════════ */
+:root { --copper: #E2A86B; --copper-2: #FFD9A8; --ink: #F2EEE8; --dim2: #9A958C; --faint2: #5E5A53; --line2: rgba(242,238,232,.12); }
+body { background: #000; color: var(--ink); cursor: auto; }
+body::after { display: none; }
+a, button, [role="button"] { cursor: pointer !important; }
+.cursor, .cursor-follower { display: none !important; }
+::selection { background: var(--copper); color: #000; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; }
+
+.site-header { background: #000; border-bottom-color: var(--line2); backdrop-filter: none; -webkit-backdrop-filter: none; }
+.back-link, .project-index { text-transform: none; letter-spacing: 0; font-size: .82rem; }
+.back-link { color: var(--dim2); }
+.back-link:hover { color: var(--copper-2); }
+.project-index { color: var(--dim2); }
+.index-muted { color: var(--faint2); }
+
+.hero-section { background: #0C0B0A; border: 1px solid var(--line2); box-shadow: none; border-radius: 16px; }
+.hero-section::after { display: none; }
+.eyebrow, .stage-caption, .meta-label, .section-label, .footer-label { text-transform: none; letter-spacing: 0; }
+.eyebrow { color: var(--copper); font-size: .8rem; }
+h1 em { color: transparent; -webkit-text-stroke: 1.2px var(--ink); font-weight: 500; }
+.tag { text-transform: none; letter-spacing: 0; font-size: .74rem; }
+.tag:hover { border-color: var(--copper); color: var(--ink); background: transparent; transform: none; }
+
+.model-stage { background: radial-gradient(circle at 50% 40%, #2a241d 0%, #12100d 60%, #0a0908 100%); border: 1px solid var(--line2); box-shadow: none; border-radius: 12px; }
+.model-badge { background: rgba(0,0,0,.6); border-color: var(--line2); color: var(--dim2); text-transform: none; letter-spacing: 0; backdrop-filter: none; }
+.badge-dot { background: var(--copper); }
+.stage-caption { color: var(--faint2); }
+
+.meta-bar { background: #0C0B0A; border-color: var(--line2); box-shadow: none; border-radius: 12px; }
+.meta-divider { background: var(--line2); }
+.meta-label { color: var(--faint2); font-size: .74rem; }
+.meta-value { color: var(--ink); }
+
+.content-section { border-bottom-color: var(--line2); }
+.section-label { color: var(--copper); font-size: .8rem; }
+.label-num { display: none; }
+.label-rule { background: var(--copper); opacity: .5; }
+
+.overview-main, .overview-aside { background: transparent !important; border-color: var(--line2) !important; box-shadow: none !important; border-radius: 12px; }
+.overview-main h2 { color: var(--ink); }
+.overview-main p { color: var(--dim2); }
+.overview-aside h3 { color: var(--copper); text-transform: none; letter-spacing: 0; }
+.objectives-list li { color: var(--dim2); border-color: var(--line2) !important; }
+.objectives-list li:hover { color: var(--ink); background: transparent; }
+.obj-marker { color: var(--copper); }
+
+.img-slot { background: #0C0B0A !important; border-color: var(--line2) !important; box-shadow: none !important; border-radius: 10px; }
+.img-slot::before, .img-slot::after { display: none; }
+.img-slot:hover { border-color: rgba(226,168,107,.5) !important; transform: none; }
+.slot-img { filter: none !important; border-radius: 6px; }
+.slot-hint { color: var(--faint2); }
+
+.detail-card { background: transparent; border-color: var(--line2); }
+.detail-card:hover { background: #0C0B0A; box-shadow: none; }
+.detail-card h3, .pullquote p { color: var(--ink); }
+.detail-card p { color: var(--dim2); }
+.card-num { color: var(--faint2); }
+
+.project-footer { border-top-color: var(--line2); }
+.footer-label { color: var(--faint2); }
+.next-link { color: var(--ink); }
+.next-link:hover { color: var(--copper-2); }
