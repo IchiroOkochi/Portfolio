@@ -197,117 +197,170 @@ const KNOWLEDGE_BASE = {
 
   name:     'Ichiro Okochi',
   pronouns: 'he/him',
-  headline: 'Computer Engineering Student @Purdue · AI · Avionics · Systems',
+  headline: 'Computer Engineering Student @Purdue in Indianapolis · AI, embedded hardware, student leadership',
   location: 'Indianapolis, IN',
-  email:    'okochi@purdue.edu',
+  email:    'iokochi@purdue.edu',
   github:   'github.com/IchiroOkochi',
   linkedin: 'linkedin.com/in/okochi',
-  status:   'Open to Opportunities',
+  status:   'open to internships, research, and project collaborations',
 
   about: {
-    summary: `Ichiro is a Computer Engineering student at Purdue University building intelligent systems
-      where artificial intelligence, software, and hardware meet, with a focus on turning ideas
-      into real-world technology.`,
-    currentWork: `VaaniConnect: building an LLM-powered translation app for underrepresented Indian dialects
-      and more inclusive multilingual communication.`,
-    interests:   'machine learning, embedded systems, avionics, aerospace, multilingual AI, real-world engineering',
-    mission:     'Build intelligent, reliable systems that quietly shape the world around them.',
+    summary: `Ichiro is a Computer Engineering student at Purdue University in Indianapolis (class of 2029).
+      He likes projects where code has to deal with the real world: noisy audio in under-served languages,
+      hands in front of a webcam, and boards that have to fit in a case he printed himself. Outside class he
+      helps run Amplify Purdue, the Sustainable Energy Club at Indy, the Japanese Student Association, and
+      the Purdue Student Union Board.`,
+    currentWork: `HandForge (a webcam hand-gesture controller for Onshape) and club leadership as Treasurer of
+      Amplify Purdue, External Affairs Manager of the Sustainable Energy Club, and Secretary of the Japanese Student Association`,
+    interests:   'AI and speech, computer vision, embedded hardware, developer tools, entrepreneurship, clean energy',
+    mission:     'Build things that work outside the lab, and help the people around him build theirs.',
     keywords:    ['about', 'who', 'ichiro', 'bio', 'background', 'story', 'person'],
     section:     'about',
   },
 
   education: {
-    school:   'Purdue University',
-    degree:   'Bachelor of Science - BS, Computer Engineering',
+    school:   'Purdue University (Indianapolis)',
+    degree:   'Bachelor of Science, Computer Engineering',
     gpa:      '3.68',
     years:    'Aug 2025 - May 2029',
-    honors:   'Purdue Space Program, Purdue Student Union Board, and Taekwondo',
-    courses:  'Computer Engineering, electromagnetic fields, algorithms, and hands-on engineering work across software and hardware.',
+    honors:   'involvement in the ECE Student Society, Amplify Purdue, the Sustainable Energy Club, the Japanese Student Association, and PSUB',
+    courses:  'computer engineering fundamentals, C programming (CS 159), algorithms, and electromagnetics',
     keywords: ['study', 'major', 'degree', 'school', 'university', 'purdue', 'gpa', 'education', 'course', 'class'],
-    section:  'experience',
+    section:  'about',
   },
 
   projects: [
     {
       title:    'Vaani Connect',
-      short:    'Architected the early backend for a multi-model AI pipeline with STT, T2T, and TTS workflows.',
-      full:     `Vaani Connect is an AI translation project where Ichiro architected the early backend for a
-        multi-model pipeline, integrating speech-to-text, text-to-text, and text-to-speech components.
-        The work focused on parallel processing, lower latency, and keeping the mobile and web platforms
-        aligned across EPICS and KL University teams.`,
-      stack:    ['Python', 'WSL', 'STT/T2T/TTS', 'AI Pipeline'],
-      keywords: ['vaani', 'vaani connect', 'translate', 'translation', 'speech', 'language', 'stt', 'tts', 't2t', 'ai pipeline', 'multilingual'],
+      short:    'A text and speech translation app for 23 languages, built with EPICS at Purdue and KL University.',
+      full:     `Vaani Connect translates text and speech across 23 languages, focused on Indian languages that
+        mainstream apps handle poorly. As EPICS Design Lead, Ichiro led full-stack development: an Expo React Native
+        app talking to a FastAPI and PyTorch backend. He integrated IndicTrans2, Whisper Large V3 Turbo, IndicWav2Vec
+        and gTTS with fallback handling, health checks and runtime metrics, and grew the benchmark to 230 multilingual
+        test cases with latency and success-rate charts.`,
+      stack:    ['Python', 'PyTorch', 'FastAPI', 'Expo React Native', 'Whisper', 'IndicTrans2', 'IndicWav2Vec', 'gTTS'],
+      keywords: ['vaani', 'vaani connect', 'translate', 'translation', 'speech', 'language', 'whisper', 'indictrans', 'fastapi', 'expo', 'multilingual'],
       type:     'ai',
     },
     {
-      title:    'Embedded System Enclosure',
-      short:    'Designed and 3D printed a custom Siemens NX enclosure for a Raspberry Pi Pico and LoRa system.',
-      full:     `This project involved designing a custom enclosure for an embedded system that uses a
-        Raspberry Pi Pico and a 900 MHz LoRa module. Ichiro translated manual measurements, board specs,
-        and tolerance calculations into a precise Siemens NX housing that could be physically produced.`,
+      title:    'HandForge',
+      short:    'Control Onshape or any browser 3D viewer with hand gestures through a normal webcam.',
+      full:     `HandForge tracks hand landmarks with MediaPipe and maps gestures to viewport controls: index finger to move,
+        index pinch to zoom, open hand to rotate, middle pinch to pan, ring pinch to fit the view, and a closed palm as idle.
+        It needs no special hardware, just a webcam.`,
+      stack:    ['Python', 'MediaPipe', 'pynput', 'Onshape'],
+      keywords: ['handforge', 'hand', 'gesture', 'webcam', 'mediapipe', 'onshape', 'cad', 'computer vision', 'air mouse'],
+      type:     'ai',
+    },
+    {
+      title:    'Payload enclosure',
+      short:    'A Siemens NX case for a Raspberry Pi Pico and LoRa radio, made for the Purdue Space Program payload pod.',
+      full:     `Ichiro designed a custom enclosure for a Raspberry Pi Pico and a 900 MHz LoRa module for the Purdue Space Program
+        payload pod. He measured the boards by hand, worked out tolerances from their specs, modeled the housing in Siemens NX,
+        and 3D printed it in PLA.`,
       stack:    ['Siemens NX', 'Raspberry Pi Pico', 'LoRa', '3D Printing'],
-      keywords: ['embedded', 'enclosure', 'raspberry pi pico', 'lora', '3d printing', 'siemens nx', 'hardware'],
+      keywords: ['embedded', 'enclosure', 'raspberry pi pico', 'lora', '3d printing', 'siemens nx', 'hardware', 'payload', 'case'],
       type:     'hardware',
+    },
+    {
+      title:    'Vocareum C Formatter',
+      short:    'A VS Code extension that formats C assignments for the Vocareum grader used in CS 159.',
+      full:     `A VS Code formatter for C files: it replaces tabs with two spaces everywhere except inside string and character
+        literals (so program output never changes), collapses repeated blank lines, and sets two-space indentation for C and headers.`,
+      stack:    ['TypeScript', 'VS Code API'],
+      keywords: ['vocareum', 'formatter', 'vs code', 'vscode', 'extension', 'cs 159', 'cs159'],
+      type:     'software',
+    },
+    {
+      title:    'donut.c, reshaped',
+      short:    "Andy Sloane's spinning ASCII donut, with the C source rearranged into a donut shape.",
+      full:     `A tribute remix of Andy Sloane's classic donut.c: the spinning ASCII torus, with the source code itself arranged
+        into the shape of a donut. The portfolio runs a live version of the animation in the browser.`,
+      stack:    ['C', 'JavaScript'],
+      keywords: ['donut', 'ascii', 'code art', 'donut.c'],
+      type:     'software',
     },
   ],
 
   skills: {
-    programming:  { items: ['Python', 'VPython', 'Algorithms', 'Object-Oriented Programming (OOP)', 'Mobile Application Development'], level: 'strong' },
-    ai:           { items: ['Hugging Face Products', 'Parallel Processing', 'Process Modeling', 'AI Pipeline Design', 'Multilingual AI'], level: 'solid' },
-    engineering:  { items: ['Computer Engineering', 'Siemens NX', 'Printed Circuit Board (PCB) Design', 'OpenRocket', 'Soldering'], level: 'strong' },
-    tools:        { items: ['GitHub', 'Powershell', 'Google Colab', 'Microsoft Office', 'Notion'], level: 'solid' },
+    programming:  { items: ['Python', 'C', 'TypeScript', 'JavaScript'], level: 'strong' },
+    ai:           { items: ['PyTorch', 'FastAPI', 'Whisper', 'IndicTrans2', 'Hugging Face', 'MediaPipe'], level: 'solid' },
+    engineering:  { items: ['Soldering', 'Siemens NX', 'PCB design', 'Raspberry Pi Pico', 'LoRa', '3D printing'], level: 'strong' },
+    tools:        { items: ['Expo React Native', 'VS Code extensions', 'Git and GitHub', 'PowerShell', 'WSL', 'budgeting and grant writing'], level: 'solid' },
     keywords:     ['skill', 'know', 'language', 'tech', 'stack', 'tools', 'experience with', 'familiar', 'proficient', 'use'],
     section:      'skills',
   },
 
   experience: [
     {
-      org:     'EPICS at Purdue',
-      role:    'Design Lead',
-      years:   'Jan 2026 - Present',
-      desc:    'Architected the early backend for a multi-model AI pipeline, integrated STT/T2T/TTS components, reduced latency, and kept the web and mobile app architecture aligned with KL University collaborators.',
+      org:   'Amplify Purdue',
+      role:  'Treasurer',
+      years: 'Sep 2026 - Present',
+      desc:  'Runs finances for a student entrepreneurship club: grant applications for 2027 case competitions and a campus pitch competition, event budgets, and reimbursement tracking that follows Purdue BOSO rules.',
     },
     {
-      org:     'Indian Institute of Technology, Delhi',
-      role:    'Project Liaison',
-      years:   'Aug 2025 - Dec 2025',
-      desc:    'Coordinated Purdue and IIT Delhi teams, organized meetings, relayed faculty feedback, researched requirements, and supported a low-cost Bhilawa seed decorticator project for rural communities.',
+      org:   'Sustainable Energy Club at Indy',
+      role:  'External Affairs Manager',
+      years: 'Sep 2026 - Present',
+      desc:  'Building a coalition of clean-energy student groups across Indiana and shaping a possible student-led clean energy design challenge.',
     },
     {
-      org:     'Purdue Student Union Board (PSUB)',
-      role:    'General Member',
-      years:   'Feb 2026 - Present',
-      desc:    'Helps plan and execute large-scale campus events, contributes new event ideas, and supports outreach and student experience initiatives.',
+      org:   'Japanese Student Association, Purdue University in Indianapolis',
+      role:  'Secretary',
+      years: 'Sep 2026 - Present',
+      desc:  'Keeps board minutes and action items, helps run cultural events, and works with Japanese student groups at other universities.',
     },
     {
-      org:     'Purdue Space Program: A SEDS Chapter',
-      role:    'Avionics Team Member',
-      years:   'Feb 2026 - Present',
-      desc:    'Contributes to Purdue Space Program avionics work for high-power rockets.',
+      org:   'Purdue Student Union Board (PSUB)',
+      role:  'General Member',
+      years: 'Feb 2026 - Present',
+      desc:  'Plans and runs large campus events and pitches new event ideas.',
+    },
+    {
+      org:   'Purdue ECE Student Society',
+      role:  'Member',
+      years: 'Mar 2026 - Present',
+      desc:  'Member of the Electrical and Computer Engineering Student Society in Indianapolis.',
+    },
+    {
+      org:   'Purdue Space Program: A SEDS Chapter',
+      role:  'Avionics Team Member, Payload Pod',
+      years: 'Feb 2026 - Oct 2026',
+      desc:  'Worked on payload pod electronics, from soldering to the printed LoRa enclosure.',
+    },
+    {
+      org:   'EPICS at Purdue',
+      role:  'Design Lead',
+      years: 'Jan 2026 - May 2026',
+      desc:  'Led full-stack development of Vaani Connect across 23 languages with a FastAPI and PyTorch backend and a 230-case benchmark.',
+    },
+    {
+      org:   'Indian Institute of Technology, Delhi',
+      role:  'Project Liaison',
+      years: 'Aug 2025 - Dec 2025',
+      desc:  'Coordinated Purdue and IIT Delhi teams on a low-cost Bhilawa seed decorticator for rural communities.',
     },
   ],
 
   blog: {
-    posts: [
-      'Currently working on this!',
-    ],
-    summary: 'The Writing section is still being built out. Fresh writing and project notes are coming soon.',
+    posts: [],
+    summary: "There's no writing section right now. The best way to see Ichiro's work is the Work section or his GitHub.",
     keywords: ['blog', 'writing', 'article', 'post', 'read', 'write', 'publish'],
-    section:  'blog',
+    section:  'projects',
   },
 
   contact: {
-    email:    'okochi@purdue.edu',
-    emailAlt: 'iokochi@purdue.edu',
-    github:   'github.com/ichirookochi',
+    email:    'iokochi@purdue.edu',
+    github:   'github.com/IchiroOkochi',
     linkedin: 'linkedin.com/in/okochi',
     keywords: ['contact', 'reach', 'email', 'hire', 'connect', 'linkedin', 'github', 'message', 'touch', 'talk'],
     section:  'contact',
   },
 
   goals: {
-    summary: `Ichiro is building toward opportunities at the intersection of AI, avionics, and systems engineering.
-      He is especially interested in real-world technology that blends software, hardware, and intelligent systems.`,
+    summary: `Ichiro is looking for internships and research where software meets hardware or real users:
+      speech and language AI, computer vision, embedded systems, and developer tools. He also enjoys
+      the organizing side, from club finances to cross-campus partnerships.`,
     keywords: ['goal', 'career', 'job', 'intern', 'internship', 'future', 'want', 'looking', 'opportunity', 'hire'],
     section:  null,
   },
@@ -351,63 +404,26 @@ function getConfiguredHFModel() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SECTION 3 — CUSTOM CURSOR
+   SECTION 3 — CONTACT FORM (posts to /api/contact, falls back to mailto)
    ═══════════════════════════════════════════════════════════════ */
-(function initCursor() {
-  const cursor   = document.getElementById('cursor');
-  const follower = document.getElementById('cursorFollower');
-  if (!cursor || !follower) return;
-  if (window.matchMedia('(pointer: coarse)').matches) return;
-
-  document.addEventListener('mousemove', e => {
-    const x = e.clientX;
-    const y = e.clientY;
-    cursor.style.left = x + 'px';
-    cursor.style.top  = y + 'px';
-    follower.style.left = x + 'px';
-    follower.style.top  = y + 'px';
-  });
-
-  document.addEventListener('mouseleave', () => {
-    cursor.style.opacity = '0'; follower.style.opacity = '0';
-  });
-  document.addEventListener('mouseenter', () => {
-    cursor.style.opacity = '1'; follower.style.opacity = '1';
-  });
-})();
-
 (function initContactApiForm() {
   const form = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
+  const status = document.getElementById('formSuccess');
   const btn = form?.querySelector('.form-submit');
   const fallbackRecipient = 'iokochi@purdue.edu';
-  let messageTimer = 0;
+  const idleLabel = btn ? btn.textContent : 'Send message';
 
   if (!form || !btn) return;
 
   const setMessage = (text, isError = false) => {
-    if (!success) return;
-
-    success.textContent = text;
-    success.style.display = 'block';
-    success.classList.toggle('is-error', isError);
-
-    window.clearTimeout(messageTimer);
-    messageTimer = window.setTimeout(() => {
-      success.style.display = 'none';
-      success.classList.remove('is-error');
-    }, 5000);
+    if (!status) return;
+    status.textContent = text;
+    status.classList.toggle('is-error', isError);
   };
 
   const openEmailFallback = payload => {
     const subject = `Portfolio message from ${payload.name}`;
-    const body = [
-      `Name: ${payload.name}`,
-      `Email: ${payload.email}`,
-      '',
-      payload.message,
-    ].join('\n');
-
+    const body = [`Name: ${payload.name}`, `Email: ${payload.email}`, '', payload.message].join('\n');
     window.location.href = `mailto:${fallbackRecipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
@@ -421,148 +437,83 @@ function getConfiguredHFModel() {
       message: String(formData.get('message') || '').trim(),
     };
 
-    if (!payload.name || !payload.email || !payload.message) {
-      setMessage('Please fill out your name, email, and message first.', true);
+    const missing = [];
+    if (!payload.name) missing.push('your name');
+    if (!payload.email) missing.push('your email');
+    if (!payload.message) missing.push('a message');
+    if (missing.length) {
+      const list = missing.length > 1 ? `${missing.slice(0, -1).join(', ')} and ${missing[missing.length - 1]}` : missing[0];
+      setMessage(`Add ${list} before sending.`, true);
+      return;
+    }
+    if (!form.femail.checkValidity()) {
+      setMessage('That email address looks incomplete. Check it and try again.', true);
       return;
     }
 
     btn.disabled = true;
-    btn.textContent = 'Sending...';
+    btn.textContent = 'Sending…';
+    setMessage('');
 
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
       let data = null;
-      try {
-        data = await response.json();
-      } catch (_) {
-        data = null;
-      }
+      try { data = await response.json(); } catch (_) { data = null; }
 
-      if (!response.ok) {
-        throw new Error(data?.error || 'Unable to send message right now.');
-      }
+      if (!response.ok) throw new Error(data?.error || 'Unable to send message right now.');
 
       form.reset();
-      setMessage(data?.message || "Message sent. I'll get back to you soon.");
+      setMessage(data?.message || "Message sent. I'll reply to the email you gave.");
     } catch (error) {
       openEmailFallback(payload);
-      setMessage('Direct send is unavailable, so your email app was opened instead.');
+      setMessage('The form could not send, so your email app opened with the message filled in.');
     } finally {
       btn.disabled = false;
-      btn.textContent = 'Send Message';
+      btn.textContent = idleLabel;
     }
   });
 })();
 
 /* ═══════════════════════════════════════════════════════════════
-   SECTION 4 — HERO CANVAS (Particle constellation)
-   ═══════════════════════════════════════════════════════════════ */
-(function initHeroCanvas() {
-  const canvas = document.getElementById('heroCanvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let W, H, particles, raf;
-  const N = 90, DIST = 140;
-  const MOUSE = { x: -9999, y: -9999 };
-
-  function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
-  function mkParticle() {
-    return {
-      x: Math.random() * W, y: Math.random() * H,
-      vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
-      r: Math.random() * 1.5 + 0.5, o: Math.random() * 0.4 + 0.1,
-    };
-  }
-  function init() { resize(); particles = Array.from({ length: N }, mkParticle); }
-  function draw() {
-    ctx.clearRect(0, 0, W, H);
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x, dy = particles[i].y - particles[j].y;
-        const d = Math.sqrt(dx*dx + dy*dy);
-        if (d < DIST) {
-          ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(255,255,255,${(1-d/DIST)*0.17})`;
-          ctx.lineWidth = 0.6; ctx.stroke();
-        }
-      }
-      const mdx = particles[i].x - MOUSE.x, mdy = particles[i].y - MOUSE.y;
-      const md = Math.sqrt(mdx*mdx + mdy*mdy);
-      if (md < 200) {
-        ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
-        ctx.lineTo(MOUSE.x, MOUSE.y);
-        ctx.strokeStyle = `rgba(255,255,255,${(1-md/200)*0.35})`;
-        ctx.lineWidth = 0.8; ctx.stroke();
-      }
-      ctx.beginPath(); ctx.arc(particles[i].x, particles[i].y, particles[i].r, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(255,255,255,${particles[i].o})`; ctx.fill();
-    }
-  }
-  function update() {
-    particles.forEach(p => {
-      p.x += p.vx; p.y += p.vy;
-      if (p.x < 0 || p.x > W) p.vx *= -1;
-      if (p.y < 0 || p.y > H) p.vy *= -1;
-    });
-  }
-  function loop() { update(); draw(); raf = requestAnimationFrame(loop); }
-
-  const hero = document.getElementById('home');
-  if (hero) {
-    hero.addEventListener('mousemove', e => {
-      const r = canvas.getBoundingClientRect();
-      MOUSE.x = e.clientX - r.left; MOUSE.y = e.clientY - r.top;
-    });
-    hero.addEventListener('mouseleave', () => { MOUSE.x = -9999; MOUSE.y = -9999; });
-  }
-
-  window.addEventListener('resize', () => { cancelAnimationFrame(raf); init(); loop(); });
-  init(); loop();
-})();
-
-/* ═══════════════════════════════════════════════════════════════
-   SECTION 5 — NAVBAR
+   SECTION 4 — TOP BAR (border on scroll, mobile menu, active link)
    ═══════════════════════════════════════════════════════════════ */
 (function initNavbar() {
   const navbar     = document.getElementById('navbar');
   const hamburger  = document.getElementById('hamburger');
   const navLinks   = document.getElementById('navLinks');
   const links      = navLinks ? navLinks.querySelectorAll('.nav-link') : [];
-  const sections   = document.querySelectorAll('section[id]');
+  const sections   = document.querySelectorAll('main section[id]');
 
   if (navbar) {
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    }, { passive: true });
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 8);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   }
 
   if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      hamburger.classList.toggle('open', open);
-    });
-    links.forEach(l => l.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-    }));
+    const setOpen = open => {
+      navLinks.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      hamburger.textContent = open ? 'Close' : 'Menu';
+    };
+    hamburger.addEventListener('click', () => setOpen(!navLinks.classList.contains('open')));
+    links.forEach(l => l.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
   }
 
   function setActive() {
-    const pos = window.scrollY + 120;
-    sections.forEach(s => {
-      if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
-        links.forEach(l => l.classList.remove('active'));
-        const a = navLinks ? navLinks.querySelector(`a[href="#${s.id}"]`) : null;
-        if (a) a.classList.add('active');
-      }
+    const pos = window.scrollY + 140;
+    let current = null;
+    sections.forEach(s => { if (pos >= s.offsetTop) current = s.id; });
+    links.forEach(l => {
+      const on = l.getAttribute('href') === `#${current}`;
+      l.classList.toggle('active', on);
+      if (on) l.setAttribute('aria-current', 'true'); else l.removeAttribute('aria-current');
     });
   }
   window.addEventListener('scroll', setActive, { passive: true });
@@ -570,281 +521,278 @@ function getConfiguredHFModel() {
 })();
 
 /* ═══════════════════════════════════════════════════════════════
-   SECTION 6 — SCROLL REVEAL
+   SECTION 5 — CIRCUIT HERO
+   Generates PCB-style traces (45° routing, pads, vias). A faint copy
+   sits underneath; a copper copy is revealed by a radial mask that
+   follows the cursor. On touch screens the probe wanders on its own
+   and jumps to wherever you tap.
    ═══════════════════════════════════════════════════════════════ */
-(function initScrollReveal() {
-  const els = document.querySelectorAll('.reveal-up');
-  if (!els.length) return;
+const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const siblings = Array.from(entry.target.parentElement.querySelectorAll(':scope > .reveal-up'));
-      const idx = siblings.indexOf(entry.target);
-      entry.target.style.transitionDelay = `${Math.min(idx * 80, 300)}ms`;
-      entry.target.classList.add('visible');
-      obs.unobserve(entry.target);
+(function initCircuit() {
+  const hero = document.getElementById('home');
+  const base = document.getElementById('tracesBase');
+  const lit  = document.getElementById('tracesLit');
+  if (!hero || !base || !lit) return;
+
+  const W = 1600, H = 900, G = 20, NS = 'http://www.w3.org/2000/svg';
+  let seed = 11;
+  const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const STRAIGHT = [[1, 0], [0, 1], [-1, 0], [0, -1]];
+  const DIAG = [[1, 1], [1, -1], [-1, 1], [-1, -1]];
+
+  const traces = [];
+  for (let i = 0; i < 78; i++) {
+    let x = Math.round((rnd() * W) / G) * G;
+    let y = Math.round((rnd() * H) / G) * G;
+    const pts = [[x, y]];
+    let dir = STRAIGHT[Math.floor(rnd() * 4)];
+    const segs = 3 + Math.floor(rnd() * 4);
+    for (let s = 0; s < segs; s++) {
+      const len = (2 + Math.floor(rnd() * 9)) * G;
+      x += dir[0] * len; y += dir[1] * len;
+      pts.push([x, y]);
+      dir = rnd() < 0.45 ? DIAG[Math.floor(rnd() * 4)] : STRAIGHT[Math.floor(rnd() * 4)];
+    }
+    traces.push(pts);
+  }
+  // a few IC footprints
+  const chips = Array.from({ length: 6 }, () => ({
+    x: Math.round((rnd() * (W - 160)) / G) * G + 40,
+    y: Math.round((rnd() * (H - 120)) / G) * G + 30,
+    w: (4 + Math.floor(rnd() * 4)) * G,
+    h: (3 + Math.floor(rnd() * 3)) * G,
+  }));
+
+  function el(name, attrs) {
+    const n = document.createElementNS(NS, name);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+
+  function draw(svg, isLit) {
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    const stroke = isLit ? '#E2A86B' : '#F2EEE8';
+    const frag = document.createDocumentFragment();
+    for (const c of chips) {
+      frag.appendChild(el('rect', { x: c.x, y: c.y, width: c.w, height: c.h, rx: 3, fill: isLit ? '#0C0B0A' : 'none', stroke, 'stroke-width': 1.6 }));
+      for (let px = c.x + 10; px < c.x + c.w - 4; px += 14) {
+        frag.appendChild(el('line', { x1: px, y1: c.y - 8, x2: px, y2: c.y, stroke, 'stroke-width': 2 }));
+        frag.appendChild(el('line', { x1: px, y1: c.y + c.h, x2: px, y2: c.y + c.h + 8, stroke, 'stroke-width': 2 }));
+      }
+    }
+    for (const pts of traces) {
+      const d = 'M' + pts.map(p => p.join(' ')).join(' L');
+      frag.appendChild(el('path', { d, fill: 'none', stroke, 'stroke-width': 2.2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+      const [sx, sy] = pts[0], [ex, ey] = pts[pts.length - 1];
+      frag.appendChild(el('circle', { cx: sx, cy: sy, r: 4.5, fill: isLit ? '#000' : 'none', stroke, 'stroke-width': 2 }));
+      frag.appendChild(el('rect', { x: ex - 6, y: ey - 6, width: 12, height: 12, rx: 2, fill: isLit ? '#000' : 'none', stroke, 'stroke-width': 2 }));
+      if (isLit && !REDUCED_MOTION) {
+        const p = el('path', { d, fill: 'none', stroke: '#FFF1DC', 'stroke-width': 3, 'stroke-linecap': 'round', class: 'trace-pulse' });
+        p.style.animationDelay = `${(-rnd() * 3.4).toFixed(2)}s`;
+        frag.appendChild(p);
+      }
+    }
+    svg.appendChild(frag);
+  }
+  draw(base, false);
+  draw(lit, true);
+  base.classList.add('hero-fade');
+
+  // probe position, eased toward the target
+  let tx = -999, ty = -999, cx = -999, cy = -999, active = false, lastMove = 0;
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  hero.addEventListener('pointermove', e => {
+    const r = hero.getBoundingClientRect();
+    tx = e.clientX - r.left; ty = e.clientY - r.top;
+    if (!active) { cx = tx; cy = ty; active = true; }
+    lastMove = performance.now();
+  });
+  hero.addEventListener('pointerleave', () => { if (fine) { active = false; } });
+
+  let raf = 0, visible = true;
+  new IntersectionObserver(([en]) => {
+    visible = en.isIntersecting;
+    if (visible && !raf) raf = requestAnimationFrame(tick);
+  }).observe(hero);
+
+  function tick(t) {
+    raf = 0;
+    if (!visible) return;
+    const idle = t - lastMove > 2500;
+    if ((!fine || idle) && !REDUCED_MOTION) {
+      // wander along a slow Lissajous path when nobody is steering
+      const w = hero.clientWidth, h = hero.clientHeight;
+      tx = w * (0.5 + 0.38 * Math.sin(t / 3100));
+      ty = h * (0.45 + 0.32 * Math.sin(t / 2300 + 1.3));
+      if (!active) { cx = tx; cy = ty; active = true; }
+    }
+    if (active) {
+      cx += (tx - cx) * 0.14; cy += (ty - cy) * 0.14;
+      hero.style.setProperty('--mx', cx.toFixed(1) + 'px');
+      hero.style.setProperty('--my', cy.toFixed(1) + 'px');
+    } else {
+      hero.style.setProperty('--mx', '-999px');
+    }
+    raf = requestAnimationFrame(tick);
+  }
+  raf = requestAnimationFrame(tick);
+})();
+
+/* Name decodes in from circuit glyphs on load */
+(function initScramble() {
+  const elName = document.querySelector('[data-scramble]');
+  if (!elName || REDUCED_MOTION) return;
+  const target = elName.textContent;
+  const glyphs = '01<>/#*+=:';
+  elName.setAttribute('aria-label', target);
+  let f = 0;
+  const iv = setInterval(() => {
+    elName.textContent = target.split('').map((ch, i) => (i < f / 3 ? ch : glyphs[Math.floor(Math.random() * glyphs.length)])).join('');
+    if (++f > target.length * 3) { clearInterval(iv); elName.textContent = target; }
+  }, 38);
+})();
+
+/* Magnetic buttons: a gentle pull toward the cursor */
+(function initMagnetic() {
+  if (REDUCED_MOTION || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  document.querySelectorAll('.magnetic').forEach(b => {
+    b.addEventListener('pointermove', e => {
+      const r = b.getBoundingClientRect();
+      b.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * 0.25}px, ${(e.clientY - r.top - r.height / 2) * 0.35}px)`;
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  els.forEach(el => obs.observe(el));
+    b.addEventListener('pointerenter', () => { b.style.transition = 'background-color .3s, color .3s, border-color .3s'; });
+    b.addEventListener('pointerleave', () => {
+      b.style.transition = 'transform .6s cubic-bezier(.2,.8,.2,1), background-color .3s, color .3s, border-color .3s';
+      b.style.transform = '';
+    });
+  });
 })();
 
 /* ═══════════════════════════════════════════════════════════════
-   SECTION 7 — CONTACT FORM
+   SECTION 6 — WORK INDEX (expand on click, preview on hover)
    ═══════════════════════════════════════════════════════════════ */
-(function initCurrentFocus() {
-  const root = document.querySelector('[data-current-focus]');
-  if (!root) return;
+(function initWork() {
+  const items = document.querySelectorAll('.work');
+  const peek = document.getElementById('peek');
 
-  const contentEl  = root.querySelector('.current-focus-content');
-  const titleEl    = root.querySelector('[data-focus-title]');
-  const descEl     = root.querySelector('[data-focus-desc]');
-  const stageEl    = root.querySelector('[data-focus-stage]');
-  const indexEl    = root.querySelector('[data-focus-index]');
-  const progressEl = root.querySelector('[data-focus-progress]');
-  const prevBtn    = root.querySelector('[data-focus-prev]');
-  const nextBtn    = root.querySelector('[data-focus-next]');
-
-  if (!contentEl || !titleEl || !descEl || !stageEl || !indexEl || !progressEl || !prevBtn || !nextBtn) return;
-
-  // Intentionally separate from the AI assistant data.
-  const FOCUS_ITEMS = [
-    {
-      title: 'VaaniConnect',
-      desc: 'Building an LLM-powered translation app focused on underrepresented Indian dialects and more inclusive multilingual communication.',
-      stage: 'Active build',
-    },
-    {
-      title: 'L1 Rocket',
-      desc: 'Designing and preparing a high-power rocket with an H motor for L1 certification and launch readiness.',
-      stage: 'Flight prep',
-    },
-    {
-      title: 'Air Mouse',
-      desc: 'Using hand tracking to control a computer smoothly and seamlessly through natural gestures.',
-      stage: 'Prototype',
-    },
-    {
-      title: 'Twin',
-      desc: 'Building a voice assistant that can understand commands and control your computer through natural conversation.',
-      stage: 'Concept build',
-    },
-  ];
-
-  const ROTATE_MS = 4800;
-  const SWAP_MS = 180;
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  let activeIndex = 0;
-  let rotationTimer = null;
-  let swapTimer = null;
-  let progressFrame = null;
-  let cycleStartedAt = 0;
-  let elapsedBeforePause = 0;
-  let isPaused = false;
-
-  function formatIndex(index) {
-    const current = String(index + 1).padStart(2, '0');
-    const total = String(FOCUS_ITEMS.length).padStart(2, '0');
-    return `${current} / ${total}`;
-  }
-
-  function setProgress(value) {
-    progressEl.style.transform = `scaleX(${Math.max(0, Math.min(1, value))})`;
-  }
-
-  function stopProgress() {
-    if (!progressFrame) return;
-    cancelAnimationFrame(progressFrame);
-    progressFrame = null;
-  }
-
-  function stopRotation() {
-    if (rotationTimer) {
-      clearTimeout(rotationTimer);
-      rotationTimer = null;
-    }
-    stopProgress();
-  }
-
-  function tickProgress(now) {
-    if (isPaused) return;
-
-    const elapsed = elapsedBeforePause + (now - cycleStartedAt);
-    setProgress(elapsed / ROTATE_MS);
-
-    if (elapsed >= ROTATE_MS) {
-      progressFrame = null;
-      return;
-    }
-
-    progressFrame = requestAnimationFrame(tickProgress);
-  }
-
-  function scheduleNext() {
-    stopRotation();
-
-    if (prefersReducedMotion || isPaused) {
-      setProgress(0);
-      return;
-    }
-
-    cycleStartedAt = performance.now();
-    progressFrame = requestAnimationFrame(tickProgress);
-    rotationTimer = setTimeout(() => {
-      showItem(activeIndex + 1);
-    }, ROTATE_MS - elapsedBeforePause);
-  }
-
-  function commitItem(index) {
-    const item = FOCUS_ITEMS[index];
-    titleEl.textContent = item.title;
-    descEl.textContent = item.desc;
-    stageEl.textContent = item.stage;
-    indexEl.textContent = formatIndex(index);
-  }
-
-  function showItem(index, immediate = false) {
-    activeIndex = (index + FOCUS_ITEMS.length) % FOCUS_ITEMS.length;
-    elapsedBeforePause = 0;
-
-    if (swapTimer) {
-      clearTimeout(swapTimer);
-      swapTimer = null;
-    }
-
-    if (immediate || prefersReducedMotion) {
-      contentEl.classList.remove('is-changing');
-      commitItem(activeIndex);
-      scheduleNext();
-      return;
-    }
-
-    contentEl.classList.add('is-changing');
-    swapTimer = setTimeout(() => {
-      commitItem(activeIndex);
-      contentEl.classList.remove('is-changing');
-      swapTimer = null;
-      scheduleNext();
-    }, SWAP_MS);
-  }
-
-  function pauseRotation() {
-    if (prefersReducedMotion || isPaused) return;
-
-    isPaused = true;
-    elapsedBeforePause += performance.now() - cycleStartedAt;
-    stopRotation();
-    setProgress(elapsedBeforePause / ROTATE_MS);
-  }
-
-  function resumeRotation() {
-    if (prefersReducedMotion || !isPaused) return;
-    isPaused = false;
-    scheduleNext();
-  }
-
-  prevBtn.addEventListener('click', () => {
-    showItem(activeIndex - 1);
+  items.forEach(item => {
+    const btn = item.querySelector('.work-row');
+    const panel = item.querySelector('.work-panel');
+    if (!btn || !panel) return;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', String(open));
+      if (open) {
+        panel.hidden = false;
+        requestAnimationFrame(() => panel.classList.add('open'));
+        hidePeek();
+      } else {
+        panel.classList.remove('open');
+        const done = () => { if (btn.getAttribute('aria-expanded') === 'false') panel.hidden = true; };
+        panel.addEventListener('transitionend', done, { once: true });
+        setTimeout(done, 600);
+      }
+      document.dispatchEvent(new CustomEvent('work:toggle', { detail: { id: panel.id, open } }));
+    });
   });
 
-  nextBtn.addEventListener('click', () => {
-    showItem(activeIndex + 1);
+  if (!peek || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  let px = 0, py = 0, qx = 0, qy = 0, raf = 0;
+  function hidePeek() { peek.classList.remove('on'); }
+  items.forEach(item => {
+    const row = item.querySelector('.work-row');
+    const tpl = document.getElementById(item.dataset.peek);
+    if (!row || !tpl) return;
+    row.addEventListener('pointerenter', e => {
+      if (row.getAttribute('aria-expanded') === 'true') return;
+      peek.replaceChildren(tpl.content.cloneNode(true));
+      qx = px = e.clientX; qy = py = e.clientY;
+      peek.classList.add('on');
+      if (!raf) raf = requestAnimationFrame(follow);
+    });
+    row.addEventListener('pointerleave', hidePeek);
   });
+  addEventListener('pointermove', e => { px = e.clientX; py = e.clientY; }, { passive: true });
+  function follow() {
+    qx += (px - qx) * 0.15; qy += (py - qy) * 0.15;
+    peek.style.left = qx + 'px'; peek.style.top = qy + 'px';
+    raf = peek.classList.contains('on') ? requestAnimationFrame(follow) : 0;
+  }
+})();
 
-  root.addEventListener('mouseenter', pauseRotation);
-  root.addEventListener('mouseleave', resumeRotation);
-  root.addEventListener('focusin', pauseRotation);
-  root.addEventListener('focusout', () => {
-    if (!root.contains(document.activeElement)) resumeRotation();
+/* Live ASCII donut (torus math from Andy Sloane's donut.c), runs only while its panel is open */
+(function initDonut() {
+  const out = document.getElementById('donut');
+  if (!out) return;
+  let A = 1, B = 1, running = false, raf = 0, last = 0;
+  const chars = '.,-~:;=!*#$@';
+  function frame(t) {
+    if (!running) { raf = 0; return; }
+    if (t - last > 45) {
+      last = t;
+      const w = 64, h = 30, b = new Array(w * h).fill(' '), z = new Array(w * h).fill(0);
+      const cA = Math.cos(A), sA = Math.sin(A), cB = Math.cos(B), sB = Math.sin(B);
+      for (let j = 0; j < 6.28; j += 0.07) {
+        const ct = Math.cos(j), st = Math.sin(j);
+        for (let i = 0; i < 6.28; i += 0.02) {
+          const sp = Math.sin(i), cp = Math.cos(i), hh = ct + 2;
+          const D = 1 / (sp * hh * sA + st * cA + 5);
+          const tt = sp * hh * cA - st * sA;
+          const x = 0 | (w / 2 + 30 * D * (cp * hh * cB - tt * sB));
+          const y = 0 | (h / 2 + 15 * D * (cp * hh * sB + tt * cB));
+          const o = x + w * y;
+          const N = 0 | (8 * ((st * sA - sp * ct * cA) * cB - sp * ct * sA - st * cA - cp * ct * sB));
+          if (y < h && y >= 0 && x >= 0 && x < w && D > z[o]) { z[o] = D; b[o] = chars[N > 0 ? N : 0]; }
+        }
+      }
+      let s = '';
+      for (let k = 0; k < h; k++) s += b.slice(k * w, k * w + w).join('') + '\n';
+      out.textContent = s;
+      A += 0.07; B += 0.03;
+    }
+    raf = requestAnimationFrame(frame);
+  }
+  function start() { if (running) return; running = true; if (!raf) raf = requestAnimationFrame(frame); }
+  function stop() { running = false; }
+  if (REDUCED_MOTION) { running = true; frame(100); running = false; return; }
+  document.addEventListener('work:toggle', e => {
+    if (e.detail.id === 'w-donut') e.detail.open ? start() : stop();
   });
-
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) pauseRotation();
-    else if (!root.matches(':hover') && !root.contains(document.activeElement)) resumeRotation();
-  });
-
-  showItem(0, true);
-})();
-
-(function initForm() {
-  const form    = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
-  if (!form) return;
-  const btn = form.querySelector('.form-submit');
-  const recipient = 'okochi@purdue.edu';
-  // Legacy mock handler disabled; the API-backed form handler lives below.
-  return;
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!btn) return;
-
-    const formData = new FormData(form);
-    const name = String(formData.get('name') || '').trim();
-    const email = String(formData.get('email') || '').trim();
-    const message = String(formData.get('message') || '').trim();
-    if (!name || !email || !message) {
-      if (success) {
-        success.textContent = 'Please fill out your name, email, and message first.';
-        success.style.display = 'block';
-      }
-      return;
-    }
-
-    const originalLabel = btn.textContent;
-    const subject = `Portfolio message from ${name}`;
-    const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      '',
-      message,
-    ].join('\n');
-    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    btn.textContent = 'Opening Email...';
-    btn.disabled = true;
-    window.location.href = mailtoUrl;
-
-    window.setTimeout(() => {
-      btn.textContent = originalLabel;
-      btn.disabled = false;
-      form.reset();
-      if (success) {
-        success.textContent = 'Your email draft is ready to send.';
-        success.style.display = 'block';
-        window.setTimeout(() => { success.style.display = 'none'; }, 5000);
-      }
-    }, 600);
-    return;
-    btn.textContent = 'Sending…'; btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Send Message'; btn.disabled = false;
-      form.reset();
-      if (success) { success.style.display = 'block'; setTimeout(() => { success.style.display = 'none'; }, 5000); }
-    }, 1200);
+    const open = document.getElementById('w-donut')?.classList.contains('open');
+    if (document.hidden) stop(); else if (open) start();
   });
 })();
 
-/* ═══════════════════════════════════════════════════════════════
-   SMOOTH ANCHOR NAVIGATION
-   ═══════════════════════════════════════════════════════════════ */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    const id = link.getAttribute('href').slice(1);
-    const target = document.getElementById(id);
-    if (!target) return;
-    e.preventDefault();
-    window.scrollTo({ top: id === 'home' ? 0 : target.offsetTop - 72, behavior: 'smooth' });
+/* Copy email button */
+(function initCopy() {
+  document.querySelectorAll('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.dataset.copy;
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.textContent = 'Copied';
+      } catch (_) {
+        btn.textContent = 'Press Ctrl+C';
+        const r = document.createRange(); r.selectNodeContents(btn.previousElementSibling);
+        const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      }
+      btn.classList.add('done');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1800);
+    });
   });
-});
+})();
 
-/* ═══════════════════════════════════════════════════════════════
-   PAGE LOAD FADE
-   ═══════════════════════════════════════════════════════════════ */
-document.body.style.opacity = '0';
-document.body.style.transition = 'opacity 0.5s ease';
-window.addEventListener('load', () => { document.body.style.opacity = '1'; });
+/* Local time in Indianapolis */
+(function initClock() {
+  const out = document.getElementById('localTime');
+  if (!out) return;
+  const fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Indiana/Indianapolis', hour: 'numeric', minute: '2-digit' });
+  const tick = () => { out.textContent = fmt.format(new Date()); };
+  tick(); setInterval(tick, 30000);
+})();
 
 /* ═══════════════════════════════════════════════════════════════════════════
    SECTION 8 — AI ASSISTANT ENGINE
@@ -1043,7 +991,7 @@ window.addEventListener('load', () => { document.body.style.opacity = '1'; });
     const KB = KNOWLEDGE_BASE;
     const checks = [
       { keywords: KB.about.keywords,     type: 'about',      payload: 'about' },
-      { keywords: KB.education.keywords, type: 'education',  payload: 'experience' },
+      { keywords: KB.education.keywords, type: 'education',  payload: 'about' },
       { keywords: KB.skills.keywords,    type: 'skills',     payload: 'skills' },
       { keywords: KB.blog.keywords,      type: 'blog',       payload: 'blog' },
       { keywords: KB.contact.keywords,   type: 'contact',    payload: 'contact' },
@@ -1169,7 +1117,7 @@ window.addEventListener('load', () => { document.body.style.opacity = '1'; });
       projects:   "Here are Ichiro's featured projects. Taking you to the Projects section now.",
       skills:     "Sure — here's a breakdown of Ichiro's technical skills. Navigating there now.",
       experience: "Here's Ichiro's professional and academic experience. Scrolling to the timeline.",
-      blog:       "The Writing section is still in progress. Heading there now so you can see what's coming next.",
+      blog:       "There's no writing section right now, so here's the Work section instead.",
       contact:    "You can reach Ichiro by email, GitHub, or LinkedIn — or use the contact form. Taking you there.",
     };
     return map[sectionId] || `Navigating to ${sectionId}…`;
@@ -1183,7 +1131,7 @@ window.addEventListener('load', () => { document.body.style.opacity = '1'; });
       about: KB.about.summary,
       projects: `This section showcases ${KB.projects.length} featured projects: ${KB.projects.map(p => p.title).join(', ')}.`,
       skills: `The Skills section highlights Ichiro's strengths across programming, AI workflows, engineering tools, and collaboration.`,
-      experience: `The Experience section covers Purdue University, EPICS at Purdue, IIT Delhi collaboration work, PSUB, and the Purdue Space Program.`,
+      experience: `The Experience section has two columns: engineering (Purdue Space Program, EPICS, IIT Delhi, ECE Student Society) and leadership (Amplify Purdue, Sustainable Energy Club, Japanese Student Association, PSUB).`,
       blog: KB.blog.summary,
       contact: `The Contact section has Ichiro's email links, GitHub, LinkedIn, and a direct message form.`,
     };
@@ -1379,7 +1327,7 @@ window.addEventListener('load', () => { document.body.style.opacity = '1'; });
     ],
     projects: [
       { label: 'AI projects',            q: 'What are his AI projects?' },
-      { label: 'Avionics work',          q: 'Tell me about his avionics project' },
+      { label: 'HandForge',              q: 'What is HandForge?' },
       { label: 'What tech does he use?', q: 'What technologies does he use?' },
       { label: 'Summarize projects',     q: 'Summarize this section' },
     ],
@@ -1390,14 +1338,14 @@ window.addEventListener('load', () => { document.body.style.opacity = '1'; });
       { label: 'Summarize skills',       q: 'Summarize this section' },
     ],
     experience: [
-      { label: 'Purdue Space Program', q: 'Tell me about his role at Purdue Space Program' },
+      { label: 'Club leadership',      q: 'What clubs does he help run?' },
       { label: 'Design Lead role',     q: 'Tell me about his EPICS design lead role' },
       { label: 'Show projects',        q: 'Go to projects section' },
       { label: 'Summarize experience', q: 'Summarize this section' },
     ],
     blog: [
-      { label: 'What does he write about?', q: 'What topics does Ichiro write about?' },
-      { label: 'AI articles',               q: 'What has he written about AI?' },
+      { label: 'Featured projects',         q: 'What projects has he built?' },
+      { label: 'His GitHub',                q: 'What is his GitHub?' },
       { label: 'Go to contact',             q: 'Take me to contact section' },
     ],
     contact: [
